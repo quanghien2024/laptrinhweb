@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 3</title>
+    <style>
+
+        .nav, .footer, .header, .aside{
+            padding-left: 10px;
+        }
+        .wrapper{
+            border: 1px solid black;
+            background-color: rgb(230, 206, 130);
+            width: 800px;
+        }
+        
+        .header{
+            height: 40px;
+            border-bottom:1px solid black;
+        }
+        .menu{
+            height: 30px;
+            border-bottom:1px solid black;
+            text-align: center;
+        }
+        .content{
+            height: 200px;
+            border-bottom:1px solid black;
+
+        }
+        .nav{
+
+           border-bottom: 1px solid black;
+            
+        }
+
+        .section{ 
+            
+            width: calc(60% - 24px);
+            padding: 5px 0px 0 12px;
+            float: left;
+            height: 88%;
+
+        }
+        .article{
+            background-color: rgb(233, 206, 149);
+            border: 1px solid black;
+            width: 97%;
+            height: 41%;
+            float: left;
+        }
+        .aside{
+            float: right;
+            height: 91%;
+            width: 40%;
+            float: left;
+            border-left: 1px solid black;
+
+        }
+        .coppy{
+            background-color: rgb(224, 170, 226);
+
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+            width: 97%;
+            height: 41%;
+            float: left;
+        }
+        .clear{
+            clear: both;
+        }
+        .footer{
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">header</div>
+        <div class="content">
+            <div class="nav">nav</div>
+            <div class="section"><span>Section</span><br/>
+                <div class="article">article</div>
+                <div class="coppy">article</div>
+            </div>
+            <div class="aside">aside</div>
+            <div class="clear">
+            </div>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>
